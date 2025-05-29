@@ -1,0 +1,55 @@
+/* Reset e stili globali */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #005a87;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 { font-size: 2.5rem; }
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .form-group { margin-bottom: 15px; }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 700;
+    }
+    select, input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    select[multiple] { height: 150px; }
+    button {
+      background: #005a87;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    button:hover { background: #004466; }
+    hr { margin: 30px 0; }
+    .chart-section { margin-bottom: 40px; }
+    canvas { width: 100% !important; max-height: 500px; }
+    footer { text-align: center; margin: 20px 0; font-size: 0.9rem; color: #777; }
+    @media (max-width:600px) {
+      header h1 { font-size: 1.8rem; }
+    }
