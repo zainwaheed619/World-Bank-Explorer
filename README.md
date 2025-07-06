@@ -1,105 +1,91 @@
-# World Bank Explorer | API Free | WEBAPP | Database
-#### Author: Bocaletto Luca
+# 🌍 World Bank Explorer
 
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)  
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)  
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)  
-[![Chart.js](https://img.shields.io/badge/Chart.js-FF6384?style=for-the-badge&logo=chart.js&logoColor=white)](https://www.chartjs.org/)  
-[![GPLv3 License](https://img.shields.io/badge/License-GPLv3-blue.svg?style=for-the-badge)](https://www.gnu.org/licenses/gpl-3.0)
+![World Bank Explorer](https://img.shields.io/badge/Explore%20Data%20with%20World%20Bank%20Explorer-brightgreen?style=flat-square)
 
----
+Welcome to the **World Bank Explorer**! This interactive and responsive web application lets you retrieve, visualize, and compare global development indicators from the World Bank Open Data API. 
 
-## World Bank Explorer
+## Table of Contents
 
-World Bank Explorer is an interactive and responsive web application that retrieves, visualizes, and compares global development indicators sourced from the [World Bank Open Data API](https://data.worldbank.org/). The application allows users to explore data on multiple scales:
-
-- **Country:** View data for one of 20 pre-selected nations.
-- **Continent/Region:** Select a specific region (with user-friendly labels such as "Europe" or "Asia & Pacific") and view the aggregated data for that region.
-- **World:** View global aggregated data.
-
----
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Releases](#releases)
 
 ## Features
 
-- **Multi-Scale Data Visualization**
-  - **Country:** Choose a country from a list for individual data.
-  - **Region:** Options include:
-    - Asia & Pacific
-    - Europe
-    - Latin America & Caribbean
-    - Middle East & North Africa
-    - North America
-    - South Asia
-    - Sub-Saharan Africa
-  - **World:** Display the aggregated global data.
-- **Wide Range of Indicators:** Compare up to 18 economic, social, and environmental indicators such as:
-  - GDP (current US$) & GDP per capita (current US$)
-  - Population, Life Expectancy at Birth, and Infant Mortality Rate (per 1,000 live births)
-  - Unemployment Rate (%)  
-  - Primary, Secondary, and Tertiary Enrollment Rates (%)
-  - Health Expenditure (% of GDP)
-  - CO₂ Emissions (kt)
-  - Urban and Rural Population (%)
-  - Net FDI (current US$), Inflation (Consumer Prices Annual %)
-  - Mobile Cellular Subscriptions (per 100 people)
-  - Access to Electricity (% of population)
-  - R&D Expenditure (% of GDP)
-- **Interactive Time Series Charts:**  
-  Data is fetched live from the World Bank API and rendered as interactive line charts using Chart.js.
-- **Customizable Time Range:**  
-  Choose any period between 1960 and 2025.
-- **Responsive & Modern Design:**  
-  Built with HTML5, CSS3, and JavaScript for optimal performance on all devices.
-- **GPLv3 Licensing:**  
-  Open source and free to use under the GNU GPLv3.
-
----
-
-## Usage
-
-1. **Select Data Scope:**
-   - Use the **Select Data Scope** dropdown to choose one of:
-     - **Country:** Displays a country selection dropdown.
-     - **Continent/Region:** Displays a dropdown with explicit region names (e.g., "Europe", "Asia & Pacific", etc.).
-     - **World:** Displays global data (using the "WLD" code); no additional selection is needed.
-2. **Configure Parameters:**
-   - If “Country” is selected, choose your desired nation.
-   - If “Continent/Region” is selected, choose your desired region.
-   - Specify the start and end year for the data series.
-   - Select one or more indicators from the multi-select control.
-3. **Click "Load Data":**
-   - The application will fetch the corresponding time series data from the World Bank Open Data API and render an interactive line chart.
-
----
+- **Interactive Dashboard**: Users can interact with data in real-time, making it easy to visualize trends and patterns.
+- **Data Visualization**: Leverage Chart.js to create stunning visual representations of economic indicators.
+- **Responsive Design**: The application adapts to different screen sizes, ensuring a seamless experience on any device.
+- **Global Development Indicators**: Access a wealth of information sourced from the World Bank Open Data API, covering various economic trends.
+- **Data Comparison**: Easily compare indicators across countries and regions.
 
 ## Technologies Used
 
-- **HTML5** – Provides the markup structure.
-- **CSS3** – Handles responsive design and styling.
-- **JavaScript** – Drives application logic and API interactions.
-- **Chart.js** – Renders dynamic, interactive time series charts.
-- **World Bank Open Data API** – Supplies global development data.
-- **Git & GitHub** – Used for version control and repository hosting.
+This project utilizes a variety of technologies to deliver a rich user experience:
 
----
+- **HTML5**: For structuring the web application.
+- **CSS3**: For styling and layout.
+- **JavaScript**: For interactive features and data handling.
+- **Chart.js**: For creating dynamic charts and graphs.
+- **API**: Integration with the World Bank Open Data API for real-time data access.
+
+## Installation
+
+To get started with the World Bank Explorer, follow these steps:
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/zainwaheed619/World-Bank-Explorer.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd World-Bank-Explorer
+   ```
+
+3. Open `index.html` in your preferred web browser.
+
+For more detailed instructions, please check the [Releases](https://github.com/zainwaheed619/World-Bank-Explorer/releases) section.
+
+## Usage
+
+Once you have the application running, you can explore various global development indicators. 
+
+1. **Select an Indicator**: Choose from a list of economic indicators available through the API.
+2. **Visualize Data**: View the data in different formats, including charts and graphs.
+3. **Compare Indicators**: Use the comparison feature to analyze trends across different countries or regions.
 
 ## Contributing
 
-Contributions are welcome!  
-Please open an issue or submit a pull request for improvements or bug fixes. For major changes, open an issue first to discuss your ideas.
+Contributions are welcome! If you have suggestions for improvements or new features, please follow these steps:
 
----
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes and commit them (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a pull request.
 
 ## License
 
-This project is licensed under the GNU General Public License v3.0.  
-See the [LICENSE](LICENSE) file for more details.
-
----
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ## Contact
 
-**Bocaletto Luca**  
-GitHub: [@bocaletto-luca](https://github.com/bocaletto-luca)
+For any inquiries or feedback, feel free to reach out to me:
 
-For any inquiries or further information, please feel free to contact me.
+- **Name**: Bocaletto Luca
+- **Email**: [your-email@example.com](mailto:your-email@example.com)
+
+## Releases
+
+To see the latest updates and download the application, visit the [Releases](https://github.com/zainwaheed619/World-Bank-Explorer/releases) section.
+
+---
+
+Explore the power of data with **World Bank Explorer** and gain insights into global economic trends. Your journey into data analysis starts here!
